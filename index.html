@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- DEMO de venta, no el sitio oficial del local. Lleva nombre y horario
+     reales, por eso va con noindex. Se quita si el local contrata. -->
+<meta name="robots" content="noindex, nofollow">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Maison Café · El momento perfecto del día · Maipú</title>
+<meta name="description" content="Le Maison Café — cafetería en Stripcenter NeoPajaritos, Av. Los Pajaritos 4500b, Maipú. 4.7★ en Google. Consumo en el lugar, para llevar y delivery.">
+
+<!--
+  ============================================================
+  DEMO — LE MAISON CAFÉ (Stripcenter NeoPajaritos, Maipú)
+
+  ✅ DATOS REALES VERIFICADOS (10-09-2026)
+  - Google Maps: 4.7★, 54 opiniones, Cafetería.
+  - Dirección: Av. Los Pajaritos 4500b, local 4, 9291988 Maipú.
+    Ubicado en el Stripcenter NeoPajaritos (dato de su propia ficha).
+  - Place ID real: 0x9662c300716f9503:0x867d5d1158f081a7
+  - Coordenadas: -33.4809336, -70.7452318
+  - CIERRA a las 20:30 (confirmado por Google).
+  - Servicios confirmados: consumo en el lugar, para llevar y entrega a
+    domicilio.
+  - Rango informado en Google por 35 personas: $5.000–10.000 por persona.
+    Es un dato agregado de Google, NO una carta.
+  - Lema real, tomado de su propio letrero: "El momento perfecto del día".
+  - Fotos: fotos propias del local publicadas en su ficha de Google.
+
+  ⚠️ PENDIENTE — ESTA PÁGINA TODAVÍA NO ESTÁ LISTA PARA MANDAR:
+  - RESEÑAS: Google NO expone ninguna de sus 54 opiniones sin sesión
+    iniciada — la ficha ni siquiera muestra la pestaña "Opiniones". Por eso
+    la sección de reseñas muestra solo el promedio REAL (4.7 de 54
+    opiniones) y NO cita a ninguna persona: no se inventan reseñas.
+    Para completarla: abrir su ficha con sesión iniciada y copiar 2 o 3
+    opiniones reales con el nombre de quien las escribió.
+  - SIN TELÉFONO: Google no publica ninguno. La página no lleva botón de
+    llamar ni de WhatsApp hasta conseguirlo.
+  - Sin Instagram encontrado. Verificar si tienen.
+  - PRECIOS: no publican carta. Los productos van sin precio.
+  - La hora de APERTURA no está publicada, solo el cierre (20:30).
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-arco" aria-hidden="true">
+    <svg viewBox="0 0 64 64" width="48" height="48">
+      <path d="M16 58V28a16 16 0 0 1 32 0v30" fill="none" stroke="currentColor" stroke-width="4"/>
+      <path d="M32 12v46M16 40h32" stroke="currentColor" stroke-width="3"/>
+    </svg>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <button class="brand" data-tab="inicio">
+      <span class="brand-ico" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="20" height="20">
+          <path d="M16 58V28a16 16 0 0 1 32 0v30" fill="none" stroke="currentColor" stroke-width="5"/>
+        </svg>
+      </span>
+      <span class="brand-name">Le Maison</span>
+    </button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <button class="nav-link active" data-tab="inicio">Inicio</button>
+      <button class="nav-link" data-tab="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab="carta">Carta</button>
+      <button class="nav-link" data-tab="resenas">Reseñas</button>
+      <button class="nav-link" data-tab="visitanos">Visítanos</button>
+    </nav>
+
+    <div class="header-actions">
+      <!-- Sin botón de contacto: el local NO tiene teléfono publicado en
+           Google y no se inventa uno. -->
+      <button class="btn btn-solid btn-sm" data-tab="visitanos">Cómo llegar</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= INICIO ================= -->
+<section class="tab-panel active" data-tab-panel="inicio">
+  <div class="hero">
+    <div class="hero-photo">
+      <img src="fotos/fachada-noche.jpg" alt="Fachada de Le Maison Café de noche, con su letrero retroiluminado y la terraza">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Cafetería · Stripcenter NeoPajaritos · Maipú</p>
+      <h1 class="reveal">El momento perfecto del día</h1>
+      <p class="hero-lead reveal">
+        Arcos, plantas colgantes y lámparas de latón en Av. Los Pajaritos 4500b.
+        Para quedarse, para llevar, o para que te lo lleven.
+      </p>
+
+      <div class="hero-pills reveal">
+        <span class="pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Consultando horario…</span></span>
+        <span class="pill">★ <strong>4.7</strong> · 54 opiniones en Google</span>
+        <span class="pill">🛵 Delivery</span>
+      </div>
+
+      <div class="hero-ctas reveal">
+        <button class="btn btn-solid" data-tab="carta">Ver la carta</button>
+        <button class="btn btn-ghost" data-tab="visitanos">Cómo llegar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que somos</span>
+        <h2 class="section-title">Una casa, en medio del strip center</h2>
+      </div>
+      <div class="pilares">
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M17 11h2a2.5 2.5 0 0 1 0 5h-2"/></svg></div>
+          <h3>Café de barra</h3>
+          <p>Máquina a la vista y molino propio, justo al entrar. El café se prepara delante tuyo.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V10a7 7 0 0 1 14 0v10"/><path d="M12 3v17"/></svg></div>
+          <h3>Un local para quedarse</h3>
+          <p>Arcos, espejos, plantas colgantes y sillas de bistró: está pensado para sentarse un rato, no para el paso rápido.</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="18" r="2.5"/><circle cx="17" cy="18" r="2.5"/><path d="M4 18h-1V9h11l3 4h3v5h-1"/></svg></div>
+          <h3>También te lo llevamos</h3>
+          <p>Consumo en el lugar, para llevar y entrega a domicilio — los tres confirmados en su ficha de Google.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOSOTROS ================= -->
+<section class="tab-panel" data-tab-panel="nosotros">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Quiénes somos</span>
+        <h2 class="section-title">Le Maison Café</h2>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-text reveal">
+          <p class="lead">
+            Le Maison Café está en el local 4 del <strong>Stripcenter NeoPajaritos</strong>,
+            en Av. Los Pajaritos 4500b. Por fuera es una vitrina más; por dentro, un salón
+            con arcos, espejos y plantas colgando del techo.
+          </p>
+          <p>
+            Su propio letrero lo dice: <em>"el momento perfecto del día"</em>. Con
+            <strong>4.7 estrellas y 54 opiniones</strong> en Google, es de las cafeterías
+            mejor evaluadas del sector.
+          </p>
+          <div class="badges reveal">
+            <span class="badge">4.7★ · 54 opiniones</span>
+            <span class="badge">Consumo en el lugar</span>
+            <span class="badge">Para llevar</span>
+            <span class="badge">Delivery</span>
+          </div>
+        </div>
+        <div class="nosotros-fotos reveal">
+          <figure class="foto-grande">
+            <img src="fotos/interior1.jpg" alt="Interior de Le Maison Café, con arcos y plantas colgantes" loading="lazy">
+            <figcaption>El salón</figcaption>
+          </figure>
+          <figure><img src="fotos/interior2.jpg" alt="Rincón de Le Maison Café" loading="lazy"></figure>
+          <figure><img src="fotos/producto.jpg" alt="Producto de Le Maison Café" loading="lazy"></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARTA ================= -->
+<section class="tab-panel" data-tab-panel="carta">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">La carta</span>
+        <h2 class="section-title">Nuestra carta</h2>
+        <p class="section-sub">
+          Arma tu pedido y consúltanos. Según el dato que Google recoge de
+          35 clientes, el gasto promedio va entre $5.000 y $10.000 por persona.
+        </p>
+      </div>
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta"></div>
+      <div id="menuPanels"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEÑAS ================= -->
+<section class="tab-panel" data-tab-panel="resenas">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Lo que dicen</span>
+        <h2 class="section-title">4.7 / 5 · 54 opiniones en Google</h2>
+      </div>
+
+      <!-- ⚠️ Google no expone ninguna de las 54 opiniones sin sesión iniciada.
+           Se muestra SOLO el promedio real y un llamado a la acción. NO se
+           inventa ni una sola reseña ni un solo nombre. Cuando se puedan
+           copiar 2-3 opiniones reales, reemplazan este bloque. -->
+      <div class="promedio-box reveal">
+        <div class="promedio-num">4.7</div>
+        <div class="promedio-stars" aria-label="4.7 de 5 estrellas">★★★★★</div>
+        <p class="promedio-txt">
+          Es el promedio real de <strong>54 opiniones</strong> publicadas en Google.
+          Si ya pasaste por Le Maison, tu opinión suma.
+        </p>
+        <a class="btn btn-solid" href="https://search.google.com/local/writereview?placeid=0x9662c300716f9503:0x867d5d1158f081a7" target="_blank" rel="noopener">
+          Dejar una reseña en Google
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISÍTANOS ================= -->
+<section class="tab-panel" data-tab-panel="visitanos">
+  <div class="section">
+    <div class="wrap">
+      <div class="eyebrow-row reveal">
+        <span class="eyebrow">Visítanos</span>
+        <h2 class="section-title">Te esperamos en NeoPajaritos</h2>
+      </div>
+      <div class="visitanos-grid">
+        <div class="visitanos-info reveal">
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><strong>Av. Los Pajaritos 4500b, local 4</strong><span>Stripcenter NeoPajaritos · Maipú</span></div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <strong>Horario</strong>
+              <span>Cierra a las 20:30</span>
+              <span class="nota-fuente">La hora de apertura no está publicada en Google — conviene confirmarla con el local.</span>
+            </div>
+          </div>
+          <div class="dato">
+            <span class="dato-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16v10H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+            <div>
+              <strong>Contacto</strong>
+              <span class="nota-fuente">El local todavía no tiene teléfono publicado en Google. En cuanto lo tengamos, se agrega acá el botón de WhatsApp.</span>
+            </div>
+          </div>
+          <div class="visitanos-ctas">
+            <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Le+Maison+Caf%C3%A9+Maipu&destination_place_id=0x9662c300716f9503:0x867d5d1158f081a7" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.4809336,-70.7452318&navigate=yes" target="_blank" rel="noopener">Abrir en Waze</a>
+          </div>
+        </div>
+        <div class="map-frame reveal">
+          <!-- Embed REAL: place id y coordenadas de su ficha de Google (10-09-2026) -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.0!2d-70.7452318!3d-33.4809336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c300716f9503%3A0x867d5d1158f081a7!2sLe%20Maison%20Caf%C3%A9!5e0!3m2!1ses-419!2scl!4v1789005600000!5m2!1ses-419!2scl"
+            loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"
+            title="Mapa de Le Maison Café en Stripcenter NeoPajaritos, Maipú"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="brand-name footer-brand">Le Maison Café</span>
+      <p>Av. Los Pajaritos 4500b, local 4 · Maipú</p>
+      <p class="status-line"><span class="status-dot" id="statusDot2"></span> <span id="statusText2">—</span></p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Le+Maison+Caf%C3%A9+Maipu" target="_blank" rel="noopener">Cómo llegar</a>
+      <a href="https://search.google.com/local/writereview?placeid=0x9662c300716f9503:0x867d5d1158f081a7" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</footer>
+
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="script.js"></script>
+<script src="carrito.js"></script>
+</body>
+</html>
