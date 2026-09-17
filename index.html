@@ -60,6 +60,72 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Le Maison Café",
+  "description": "Le Maison Café — cafetería en Stripcenter NeoPajaritos, Av. Los Pajaritos 4500b, Maipú. 4.7★ en Google. Consumo en el lugar, para llevar y delivery.",
+  "image": "https://mmedinacode.github.io/Le-Maison-Cafe-Web/fotos/fachada-noche.jpg",
+  "url": "https://mmedinacode.github.io/Le-Maison-Cafe-Web/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CL",
+    "streetAddress": "Av. Los Pajaritos 4500b, local 4",
+    "addressLocality": "Stripcenter NeoPajaritos · Maipú"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "08:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "08:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "08:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "08:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "20:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:30",
+      "closes": "20:30"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -152,7 +218,7 @@
         <article class="info-card reveal">
           <div class="pilar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="18" r="2.5"/><circle cx="17" cy="18" r="2.5"/><path d="M4 18h-1V9h11l3 4h3v5h-1"/></svg></div>
           <h3>También te lo llevamos</h3>
-          <p>Consumo en el lugar, para llevar y entrega a domicilio — los tres confirmados en su ficha de Google.</p>
+          <p>Consumo en el lugar, para llevar y entrega a domicilio.</p>
         </article>
       </div>
     </div>
@@ -269,7 +335,7 @@
             <ul class="horario-semana horario-parcial">
               <li><span class="hs-dia">Cierra a las 20:30</span></li>
             </ul>
-            <p class="info-sub info-porconfirmar">Horario completo por confirmar con el local.</p>
+            
           </div>
 
           <div class="info-bloque">
@@ -324,5 +390,6 @@
 <script>window.HORARIO={dias:["08:00 - 20:30","08:00 - 20:30","08:00 - 20:30","08:00 - 20:30","08:00 - 20:30","10:30 - 20:30","Cerrado"],fuente:"Google Maps, 11-09-2026"};</script>
 <script src="horario.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>

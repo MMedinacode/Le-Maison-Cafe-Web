@@ -283,3 +283,16 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.12; le
 }
 .promedio-stars{ color:var(--dorado); font-size:1.4rem; letter-spacing:.14em; margin:8px 0 16px; }
 .promedio-txt{ color:var(--tinta-suave); margin:0 0 26px; font-size:.97rem; }
+
+
+/* ══════════════════════════════════════════════════════════════
+   Parche 17-09-2026 — variables que se usaban sin declarar
+   ══════════════════════════════════════════════════════════════
+   Estas var() no existían en ninguna parte del archivo, así que
+   el navegador descartaba la propiedad entera y el elemento se
+   quedaba con el valor heredado. Se declaran apuntando al color
+   equivalente que el sitio ya tenía, para no inventar paleta. */
+:root{
+  --acento: var(--petroleo);
+  --suave: var(--crema-osc);
+}
