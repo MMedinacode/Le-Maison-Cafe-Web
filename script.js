@@ -16,7 +16,7 @@ const MENU = {
     label: 'Café',
     items: [
       { n:'Café de barra', d:'Máquina espresso y molino propio, a la vista al entrar', img:'fotos/interior1.jpg' },
-      { n:'Para llevar',   d:'Servicio confirmado en su ficha de Google' },
+      { n:'Para llevar',   d:'Servicio disponible' },
     ]
   },
   vitrina: {
