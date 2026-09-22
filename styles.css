@@ -324,3 +324,19 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.12; le
   border-top:1px solid var(--crema-osc); padding-top:11px; }
 .resena footer b{ font-size:15px; }
 .resena footer span{ font-size:12.5px; color:var(--tinta-suave); }
+
+
+/* 22-09-2026 — flotantes. Esta página no tenía ninguno, aunque cargaba
+   flotantes.js: el módulo no los inventa, necesita el marcado. */
+.float{ position:fixed; right:18px; bottom:18px; z-index:80;
+  display:flex; flex-direction:column; gap:11px; }
+.fab{ width:50px; height:50px; border-radius:50%; border:0; cursor:pointer;
+  display:grid; place-content:center; text-decoration:none; color:#fff;
+  box-shadow:0 4px 14px rgba(0,0,0,.18), 0 12px 30px -12px rgba(0,0,0,.4);
+  transition:transform .26s ease, box-shadow .26s ease; }
+.fab svg{ width:23px; height:23px; display:block; }
+.fab:hover{ transform:translateY(-4px) scale(1.06); }
+.fab:active{ transform:scale(.93); }
+.fab-ig{ background:linear-gradient(45deg,#F9CE34,#EE2A7B 50%,#6228D7); }
+.fab-top{ background:var(--petroleo); }
+@media (max-width:640px){ .float{ right:14px; bottom:14px } .fab{ width:46px;height:46px } }
