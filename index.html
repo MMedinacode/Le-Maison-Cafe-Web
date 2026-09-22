@@ -28,7 +28,7 @@
   DEMO — LE MAISON CAFÉ (Stripcenter NeoPajaritos, Maipú)
 
   ✅ DATOS REALES VERIFICADOS (10-09-2026)
-  - Google Maps: 4.7★, 54 opiniones, Cafetería.
+  - Google Maps: 4.7★, 55 opiniones, Cafetería.
   - Dirección: Av. Los Pajaritos 4500b, local 4, 9291988 Maipú.
     Ubicado en el Stripcenter NeoPajaritos (dato de su propia ficha).
   - Place ID real: 0x9662c300716f9503:0x867d5d1158f081a7
@@ -42,7 +42,7 @@
   - Fotos: fotos propias del local publicadas en su ficha de Google.
 
   ⚠️ PENDIENTE — ESTA PÁGINA TODAVÍA NO ESTÁ LISTA PARA MANDAR:
-  - RESEÑAS: Google NO expone ninguna de sus 54 opiniones sin sesión
+  - RESEÑAS: Google NO expone ninguna de sus 55 opiniones sin sesión
     iniciada — la ficha ni siquiera muestra la pestaña "Opiniones". Por eso
     la sección de reseñas muestra solo el promedio REAL (4.7 de 54
     opiniones) y NO cita a ninguna persona: no se inventan reseñas.
@@ -59,8 +59,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="pulido.css">
+<link rel="stylesheet" href="styles.css?v=22092026">
+<link rel="stylesheet" href="pulido.css?v=22092026">
 
 <!-- ══════════════════════════════════════════════════════════════
      Datos estructurados (schema.org)
@@ -141,11 +141,11 @@
 <header class="site-header">
   <div class="header-inner">
     <button class="brand" data-tab="inicio">
-      <span class="brand-ico" aria-hidden="true">
-        <svg viewBox="0 0 64 64" width="20" height="20">
-          <path d="M16 58V28a16 16 0 0 1 32 0v30" fill="none" stroke="currentColor" stroke-width="5"/>
-        </svg>
-      </span>
+      <!-- Su logo real, recortado del avatar de su Instagram. El nombre
+           va al lado como TEXTO y no dentro de la imagen: a 42px las dos
+           líneas del logo no se leerían, y además así Google lo lee. -->
+      <img class="brand-logo" src="fotos/lemaison-logo.png" alt=""
+           width="288" height="288" decoding="async">
       <span class="brand-name">Le Maison</span>
     </button>
 
@@ -187,7 +187,7 @@
 
       <div class="hero-pills reveal">
         <span class="pill"><span class="status-dot" id="statusDot"></span><span id="statusText">Consultando horario…</span></span>
-        <span class="pill">★ <strong>4.7</strong> · 54 opiniones en Google</span>
+        <span class="pill">★ <strong>4.7</strong> · 55 opiniones en Google</span>
         <span class="pill">🛵 Delivery</span>
       </div>
 
@@ -242,11 +242,11 @@
           </p>
           <p>
             Su propio letrero lo dice: <em>"el momento perfecto del día"</em>. Con
-            <strong>4.7 estrellas y 54 opiniones</strong> en Google, es de las cafeterías
+            <strong>4.7 estrellas y 55 opiniones</strong> en Google, es de las cafeterías
             mejor evaluadas del sector.
           </p>
           <div class="badges reveal">
-            <span class="badge">4.7★ · 54 opiniones</span>
+            <span class="badge">4.7★ · 55 opiniones</span>
             <span class="badge">Consumo en el lugar</span>
             <span class="badge">Para llevar</span>
             <span class="badge">Delivery</span>
@@ -290,18 +290,55 @@
     <div class="wrap">
       <div class="eyebrow-row reveal">
         <span class="eyebrow">Lo que dicen</span>
-        <h2 class="section-title">4.7 / 5 · 54 opiniones en Google</h2>
+        <h2 class="section-title">4,7 / 5 · 55 opiniones en Google</h2>
       </div>
 
-      <!-- ⚠️ Google no expone ninguna de las 54 opiniones sin sesión iniciada.
-           Se muestra SOLO el promedio real y un llamado a la acción. NO se
-           inventa ni una sola reseña ni un solo nombre. Cuando se puedan
-           copiar 2-3 opiniones reales, reemplazan este bloque. -->
+      <!--
+        Reseñas REALES de su ficha de Google, leídas el 22-09-2026. La nota
+        anterior decía que Google no las exponía sin sesión: sí lo hace, si
+        se pide la ficha con el parámetro de opiniones (!9m1!1b1). Son 55,
+        no 54. Cada cita va con el nombre y el peso de quien la escribió.
+        No se toca una coma de lo que escribieron.
+      -->
+      <div class="resenas-grid reveal">
+        <blockquote class="resena">
+          <p class="resena-stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>“Excelente cafetería, un lugar muy acogedor y con una atención realmente
+             destacable. El ambiente es tranquilo, ideal para conversar o trabajar un
+             rato con un buen café. Los productos son frescos y se nota la calidad,
+             especialmente el café, que tiene muy buen sabor y aroma.”</p>
+          <footer><b>flavio benavides</b><span>12 opiniones · 3 fotos</span></footer>
+        </blockquote>
+
+        <blockquote class="resena">
+          <p class="resena-stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>“Es una cafetería chiquita, pero con detalles bonitos. Lo que me gustó
+             mucho fue el sabor del Chai Latte.”</p>
+          <footer><b>Danita</b><span>Local Guide · 33 opiniones · 62 fotos</span></footer>
+        </blockquote>
+
+        <blockquote class="resena">
+          <p class="resena-stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>“Quedé sorprendida por lo linda y acogedora. La atención es muy amable y
+             la comida estaba muy buena. Las porciones son grandes. Desde ahora es uno
+             de mis lugares favoritos de Maipú.”</p>
+          <footer><b>scarlet scheihing</b><span>Local Guide · 23 opiniones</span></footer>
+        </blockquote>
+
+        <blockquote class="resena">
+          <p class="resena-stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>“Ya se nos hizo costumbre venir con mi señora. Productos de primera, buen
+             café y una atención rápida y personalizada. Ricos pastelitos, tortas y
+             galletitas a muy buen precio.”</p>
+          <footer><b>David Espinoza</b><span>3 opiniones</span></footer>
+        </blockquote>
+      </div>
+
       <div class="promedio-box reveal">
         <div class="promedio-num">4.7</div>
         <div class="promedio-stars" aria-label="4.7 de 5 estrellas">★★★★★</div>
         <p class="promedio-txt">
-          Es el promedio real de <strong>54 opiniones</strong> publicadas en Google.
+          Es nuestro promedio real, con <strong>55 opiniones</strong> en Google.
           Si ya pasaste por Le Maison, tu opinión suma.
         </p>
         <a class="btn btn-solid" href="https://search.google.com/local/writereview?placeid=0x9662c300716f9503:0x867d5d1158f081a7" target="_blank" rel="noopener">
@@ -387,8 +424,31 @@
 <script src="script.js"></script>
 <script src="carrito.js"></script>
 <!-- Horario REAL de su ficha de Google Maps (11-09-2026). El módulo horario.js pinta la semana completa y el estado en vivo. -->
-<script>window.HORARIO={dias:["08:00 - 20:30","08:00 - 20:30","08:00 - 20:30","08:00 - 20:30","08:00 - 20:30","10:30 - 20:30","Cerrado"],fuente:"Google Maps, 11-09-2026"};</script>
+<!-- ⚠️ ESTE BLOQUE VA ANTES DE LOS MÓDULOS. horario.js y redes.js leen su
+     configuración en cuanto se ejecutan, no al DOMContentLoaded.
+
+     HORARIO: Google dice que cerramos 20:30; la bio de su propio Instagram
+     dice lunes a viernes 8 a 20, sábado 10 a 20 y domingo cerrado. Gana el
+     material del propio local, que es el criterio del proyecto. La
+     diferencia entre los dos canales queda anotada como gancho.
+
+     INSTAGRAM VERIFICADO: el enlace de mapas de su bio resuelve al mismo
+     place id que su ficha (0x9662c300716f9503:0x867d5d1158f081a7). -->
+<script>
+window.HORARIO = {
+  dias: ["08:00 - 20:00","08:00 - 20:00","08:00 - 20:00","08:00 - 20:00",
+         "08:00 - 20:00","10:00 - 20:00","Cerrado"],
+  fuente: "Bio de @le.maison.cafe, 22-09-2026"
+};
+window.REDES = {
+  intro: "Nuestro Instagram es donde publicamos todo lo del día.",
+  instagram: { user: "le.maison.cafe", seguidores: "761",
+               nota: "6 publicaciones." },
+  google: { cid: "9691004302259159463", nota: "4,7 ★ con 55 opiniones." }
+};
+</script>
 <script src="horario.js"></script>
+<script src="redes.js"></script>
 <script src="flotantes.js"></script>
 <script src="pulido.js"></script>
 </body>

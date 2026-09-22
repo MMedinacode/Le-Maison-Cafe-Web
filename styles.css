@@ -296,3 +296,31 @@ h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:1.12; le
   --acento: var(--petroleo);
   --suave: var(--crema-osc);
 }
+
+/* ══════════════════════════════════════════════════════════════════════
+   22-09-2026 · logo, reseñas reales y pestaña Redes
+   ══════════════════════════════════════════════════════════════════════ */
+
+.brand-logo{ width:34px; height:34px; flex:none; display:block; border-radius:50%;
+  transition:transform .3s ease; }
+.brand:hover .brand-logo{ transform:scale(1.06); }
+
+/* Las reseñas: antes no había ninguna citada, sólo el promedio. */
+.resenas-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+  gap:16px; margin-bottom:26px;
+}
+.resena{
+  margin:0; background:var(--papel); border:1px solid var(--crema-osc);
+  border-radius:16px; padding:22px 20px; display:flex; flex-direction:column;
+  box-shadow:0 1px 2px rgba(34,50,58,.05), 0 12px 30px -20px rgba(22,51,63,.35);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.resena:hover{ transform:translateY(-3px);
+  box-shadow:0 2px 8px rgba(34,50,58,.08), 0 26px 50px -26px rgba(22,51,63,.45); }
+.resena-stars{ color:var(--dorado); letter-spacing:.14em; margin:0 0 10px; font-size:15px; }
+.resena p:not(.resena-stars){ margin:0 0 16px; font-size:16px; line-height:1.55; }
+.resena footer{ margin-top:auto; display:flex; flex-direction:column;
+  border-top:1px solid var(--crema-osc); padding-top:11px; }
+.resena footer b{ font-size:15px; }
+.resena footer span{ font-size:12.5px; color:var(--tinta-suave); }
